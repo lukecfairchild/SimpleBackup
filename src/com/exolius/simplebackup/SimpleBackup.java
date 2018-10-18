@@ -80,8 +80,6 @@ public class SimpleBackup extends JavaPlugin {
                     // When the task is run, start the map backup
                     if (backupEmpty || Bukkit.getServer().getOnlinePlayers().size() > 0 || loginListener.someoneWasOnline()) {
                         doBackup();
-                    } else {
-                        getLogger().info("Skipping backup (no one was online)");
                     }
                 }
             }, delay, ticks);
